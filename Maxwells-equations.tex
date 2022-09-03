@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[showframe]{geometry}
+\usepackage[leqno]{mathtools}
+\usepackage{chngcntr}
+\usepackage{physics}
+
+\counterwithin{equation}{section}
+\usepackage[roman, thin, thinp, thinc]{esdiff}
+
+\begin{document}
+	\texttt{Comments left-aligned: }
+	\begin{equation}
+		\begin{alignedat}{3}
+			& \hskip8em & \frac{\partial{\mathcal D}}{{\partial{t}}}           & = \curl \mathcal H   & \hskip8em & \text{\rlap{(Faraday's Law)}} \\[0.5ex]
+			&           & \frac{\partial{\mathcal B}}{{\partial{t}}}          & = -\curl \mathcal E  &           & \text{\rlap{(Ampère's Law)}} \\[0.5ex]
+			&           & \div \mathcal B                                      & = 0                  &           & \text{\rlap{(Gauss' Law)}} \\[0.5ex]
+			&           & \div \mathcal D                                      & = 0                  &           & \text{\rlap{(Coulomb's Law)}}
+		\end{alignedat}
+	\end{equation}
+	\vskip0.5cm
+	
+	\texttt{Comments right-aligned: }
+	\begin{equation}
+		\begin{alignedat}{3}
+			& \hskip14em & \frac{\partial{\mathcal D}}{{\partial{t}}}  & = \curl \mathcal H    & \hskip14em & \text{\llap{(Faraday's Lawraday)}} \\[0.5ex]
+			&            & \frac{\partial{\mathcal B}}{{\partial{t}}}  & = -\nabla  \mathcal E &            & \text{\llap{(Ampère's Law)}} \\[0.5ex]
+			&            & \div  \mathcal B                            & = 0                   &            & \text{\llap{(Gauss' Law)}}\\[0.5ex]
+			&            & \div \mathcal D                             & = 0                   &            & \text{\llap{(Coulomb's Law)}}
+		\end{alignedat}
+	\end{equation}
+	\vskip0.5cm
+	
+	
+	\texttt{With flalign, comments right-aligned: }
+	
+	\begin{flalign}
+		&   & \frac{\partial{\mathcal D}}{{\partial{t}}}    & = \curl \mathcal H  &  & \text{\llap{(Faraday's Law)}} \\[0.5ex]
+		&   & \frac{\partial{\mathcal B}}{{\partial{t}}}    & = -\curl \mathcal E &  & \text{\llap{(Ampère's Law)}} \\[0.5ex]
+		&   & \div  \mathcal B                              & = 0                 &  & \text{\llap{(Gauss' Law)}}\\[0.5ex]
+		&   & \div  \mathcal D                              & = 0                 &  & \text{\llap{(Coulomb's Law)}}
+	\end{flalign}
+	
+\end{document} 

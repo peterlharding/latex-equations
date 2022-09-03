@@ -1,0 +1,414 @@
+\documentclass[]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Some examples of Mathematical Equations rendered in LaTex
+\end{abstract}
+
+
+\section{Algebra}
+
+The well known Pythagorean theorem \(x^2 + y^2 = z^2\) was 
+proved to be invalid for exponents greater than $2$. 
+
+Thus the more general equation has no integer solutions:
+
+\[ x^n + y^n = z^n \]
+
+
+\begin{equation} \label{eq1}
+	\begin{split}
+		A & = \frac{\pi r^2}{2} \\
+		& = \frac{1}{2} \pi r^2
+	\end{split}
+\end{equation}
+
+\subsection{Aligning Equations}
+
+\begin{align*}
+	a+b \times a-b  &=  (a+b)(a-b) &= a^2 - b^2 \\ 
+	x+y \times x-y  &=  (x+y)(x-y) &= x^2 - y^2 \\
+	p+q \times p-q  &=  (p+q)(p-q) &= p^2 - q^2
+\end{align*}
+
+
+\begin{gather*} 
+	(a+b)^2 = a^2 + 2ab + b^2 \\ 
+	(a-b)^2 = a^2 - 2ab + b^2
+\end{gather*}
+
+\begin{align*}
+	f(x) &= x^2 \\
+	g(x) &= \frac{1}{x} \\
+	F(x) &= \int^a_b \frac{1}{3}x^3
+\end{align*}
+
+\subsection{Various Examples}
+
+\[ 
+F = G \left( \frac{m_1 m_2}{r^2} \right)
+\]
+
+\[ 
+\left[  \frac{ N } { \left( \frac{L}{p} \right)  - (m+n) }  \right]
+\]
+
+
+\begin{equation*}
+	y = 1 + \left(  \frac{1}{x} + \frac{1}{x^2} + \frac{1}{x^3} +  \ldots  \\
+             + \frac{1}{x^{n-1}} + \frac{1}{x^n} \right)
+\end{equation*}
+
+
+\[ 
+\left \{
+\begin{tabular}{ccc}
+	1 & 5 & 8 \\
+	0 & 2 & 4 \\
+	3 & 3 & -8 
+\end{tabular}
+\right \}
+\]
+
+\newpage
+
+\section{Trigonometry}
+
+\[
+\sin^2(\theta)+\cos^2(\theta) = 1
+\]
+
+\section{Operators}
+
+	\[
+\lim_{h \rightarrow 0 } \frac{f(x+h)-f(x)}{h}
+\]
+This operator changes when used alongside 
+text \quad  \( \lim_{x \rightarrow h} (x-h) \).
+
+
+\begin{eqnarray*}
+	f(x) = \sum_{i=0}^{n} \frac{a_i}{1+x} \\
+	\textstyle f(x) = \textstyle \sum_{i=0}^{n} \frac{a_i}{1+x} \\
+	\scriptstyle f(x) = \scriptstyle \sum_{i=0}^{n} \frac{a_i}{1+x} \\
+	\scriptscriptstyle f(x) = \scriptscriptstyle \sum_{i=0}^{n} \frac{a_i}{1+x}
+\end{eqnarray*}
+
+
+\subsection{Fractions and Binomials}
+
+\[ \frac{1+\frac{x}{y}}{1+\frac{1}{1+\frac{1}{z}}} \]
+
+\[ \frac{1}{\sqrt{x}} \]
+
+\[
+a_0+{1\over\displaystyle a_1+
+	{1\over\displaystyle a_2+
+		{1 \over\displaystyle a_3 + 
+			{1 \over\displaystyle a_4}}}}
+\]
+
+Mixing text and equations:
+
+\[ f(x)=\frac{P(x)}{Q(x)} \ \ \textrm{and} 
+\ \ f(x)=\textstyle\frac{P(x)}{Q(x)} \]
+
+
+\[
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]\\
+
+\section{Matrices}
+
+The identity matrix:
+
+\[
+\left[
+\begin{matrix}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1
+\end{matrix}
+\right]
+\]
+
+\subsection{Greek Letters}
+\newcommand\omicron{o}
+ 
+$$ \alpha \quad \beta \quad  \gamma \quad \delta \  \epsilon \   \zeta \  \eta \  \theta \  \iota \  \kappa \  \lambda \  \mu \  \nu  \  \xi \  
+\omicron \ \pi \  \rho \  \sigma \  \tau \  \upsilon \   \phi \  \chi \  \psi \  \omega $$
+
+
+\subsection{Binary Operators}
+
+$$ \times \quad \otimes \quad \oplus \quad \cup \quad \cap $$
+
+\subsection{Relation Operators}
+
+$$ < \quad > \quad \subset \quad \supset \quad \subseteq \quad \supseteq $$
+
+\subsection{Other Symbols}
+
+$$ \int \quad \oint \quad \sum \quad \prod $$
+
+\begin{itemize}
+\item  $\mathbb{P}$ \quad Prime numbers
+\item $ \mathbb{W} \quad \textrm{Whole numbers} $
+\item $ \mathbb{N} \quad \textrm{Natural numbers} $
+\item $ \mathbb{Z} \quad \textrm{Integers} $
+\item $ \mathbb{Q} \quad \textrm{Rational numbers} $
+\item $ \mathbb{R} \quad \textrm{Real numbers} $
+\item $ \mathbb{C} \quad \textrm{Complex numbers} $
+\item $ \mathbb{H} \quad \textrm{Quaternions} $
+\item $ \mathbb{O} \quad \textrm{Octonions} $
+\item $ \mathbb{S} \quad \textrm{Sedenions} $
+\end{itemize}
+
+
+%% \[
+%% \N \quad
+%% \natnums \quad
+%% \Z \quad
+%% \R \quad
+%% \reals \quad
+%%\Reals \quad
+%% \cnums \quad
+%% \Complex \quad
+%% \]
+
+\[
+\langle \big\langle \bigg\langle \Bigg\langle \Bigg\rangle \bigg\rangle  \big\rangle \rangle
+\]
+
+
+
+\newpage
+
+
+\section{Complex Numbers}
+
+\[ i^2  -1 \]
+
+\[ z = x + i y \]
+  
+$$ \mathbb{C} $$
+$$ \{z,\overline{z}\} \in \mathbb{C} $$
+$$ \Re(z)=a $$
+$$ \Im(z)=b $$
+
+$$ \Re(z),\Im(z) $$ 
+$$ \operatorname{Re}(z), \operatorname{Im}(z) $$ 
+$$ \mathfrak{Re}(z), \mathfrak{Im}(z) $$ 
+
+$$ z=a+ib $$ 
+$$ \bar{z}=a-ib $$ 
+$$ \Re{z}=a $$
+$$ \Im{z}=b $$
+
+$$ \bar{z_{1}z_{2}} $$
+$$ \overline{z_{1}z_{2}} $$
+
+\newpage
+
+
+\section{Navier-Stokes Equations}
+
+\subsection{Einstein Summation Convention}
+
+\begin{equation}
+	\frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0
+\end{equation}
+
+\begin{equation}
+	\frac{\partial (\rho u_{i})}{\partial t} + \frac{\partial[\rho u_{i}u_{j}]}{\partial x_{j}} = -\frac{\partial p}{\partial x_{i}} + \frac{\partial \tau_{ij}}{\partial x_{j}} + \rho f_{i} \end{equation}
+\begin{equation}
+	\frac{\partial (\rho e)}{\partial t} + (\rho e+p)\frac{\partial u_{i}}{\partial x_{i}} = \frac{\partial(\tau_{ij}u_{j})}{\partial x_{i}} + \rho f_{i}u_{i} + \frac{\partial(\dot{ q_{i}})}{\partial x_{i}} + r \end{equation}
+The Einstein summation convention dictates that: When a sub-indice (here $i$ or $j$) is twice or more repeated in the same equation, one sums across the n-dimensions. 
+
+So, in the context of Navier-Stokes in three spatial dimensions,  one repeats the term three times, each time changing the indice for one representing the corresponding dimension (ie $1,2,3$ or $x,y,z$).
+
+The first equation is therefore a shorthand representation of: $\frac{\partial \rho}{\partial t}+\frac{\partial(\rho u_{1})}{\partial x_{1}}+\frac{\partial(\rho u_{2})}{\partial x_{2}}+ \frac{\partial(\rho u_{3})}{\partial x_{3}}=0$.
+
+The second equation is actually a superposition of three separable equations which could be written in a three-line form: one line equation for each $i$ in each of which one sums the three terms for the $j$ sub-indice.
+
+\subsection{Classic Notation with $\longrightarrow , \otimes , \nabla$}
+
+\begin{equation}
+	\frac{\partial \rho}{\partial t} + \overrightarrow{\nabla}\cdot(\rho\overrightarrow{u})=0
+\end{equation}
+
+
+\begin{equation}
+	\frac{\partial(\rho \overrightarrow{u})}{\partial t} + \overrightarrow{\nabla}\cdot[\rho\overline{\overline{u\otimes u}}] = -\overrightarrow{\nabla p} + \overrightarrow{\nabla}\cdot\overline{\overline{\tau}} + \rho\overrightarrow{f}
+\end{equation}
+
+\begin{equation}
+	\frac{\partial(\rho e)}{\partial t} + \overrightarrow{\nabla}\cdot((\rho e + p)\overrightarrow{u}) = \overrightarrow{\nabla}\cdot(\overline{\overline{\tau}}\cdot\overrightarrow{u}) + \rho\overrightarrow{f}\overrightarrow{u} + \overrightarrow{\nabla}\cdot(\overrightarrow{\dot{q}})+r
+\end{equation}
+
+Here $\otimes$ denotes the tensor product which forms a tensor from the constituent vectors.  A double bar denotes a tensor.  These equations using the Classic Notation are equivalent to the earlier three using the Einstein Summation Convention.
+
+\subsection{Navier Stokes Equation 3D Cartesia Coordinates}
+
+\begin{center}
+	\bigskip\LARGE{$x: \rho \: (\partial_t u_x + u_x \: \partial_x u_x + u_y \partial_y u_x + u_z \: \partial_z u_x) = -\partial_x p \; + \mu \: (\partial_x^2 u_x \; + \partial_y^2 u_x \; + \partial_z^2 u_x) + \frac{1}{3} \mu \partial_x \: (\partial_x^2 u_x \; + \partial_y^2 u_y \; + \partial_z^2 u_z) + pg_x$}\\
+	\bigskip\LARGE{$y: \rho \: (\partial_t u_y + u_x \: \partial_x u_y + u_y \partial_y u_y + u_z \: \partial_z u_y) = -\partial_y p \; + \mu \: (\partial_x^2 u_y \; + \partial_y^2 u_y \; + \partial_z^2 u_y) + \frac{1}{3} \mu \partial_y \: (\partial_x^2 u_x \; + \partial_y^2 u_y \; + \partial_z^2 u_z) + pg_y$}\\
+	\bigskip\LARGE{$z: \rho \: (\partial_t u_z + u_x \: \partial_x u_z + u_y \partial_y u_z + u_z \: \partial_z u_z) = -\partial_z p \; + \mu \: (\partial_x^2 u_z \; + \partial_y^2 u_z \; + \partial_z^2 u_z) + \frac{1}{3} \mu \partial_z \: (\partial_x^2 u_x \; + \partial_y^2 u_y \; + \partial_z^2 u_z) + pg_z$\\}
+	
+\end{center}
+\newpage
+
+\section{Logarithhms}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	\LARGE{ \log x y = \log x + \log y
+	}
+	\]
+	
+\section{Calculus}
+
+{\fontsize{30pt}{36pt}\selectfont
+\[
+\LARGE{
+	\frac{df}{dt} = \lim_{h \rightarrow 0} \frac{f(t+h) - f(t)}{h}
+}
+\]
+	
+\section{Newton's Law of Gravity}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	\LARGE{
+		F = G \frac{m_1 m_2}{d^2}
+	}
+	\]
+	
+}\section{Complex Numbers}
+
+{\fontsize{30pt}{36pt}\selectfont
+\[
+\LARGE{
+	i^2 = -1
+}
+\]
+}
+
+\section{Euler's Formula for Polyhedra}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	\LARGE{
+		F - E + V = 2
+	}
+	\]
+}
+
+\section{Maxwell's Equations}
+
+\section{The Normal Distribution}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	\LARGE{
+		\Phi(x) =  \frac{1}{\sqrt{2 \pi \sigma}} e^{- \frac{(x - \mu)^2}{2 \sigma^2}}
+		}
+	\]
+}
+
+\section{The Wave Equation}
+
+{\fontsize{30pt}{36pt}\selectfont
+\[
+\LARGE{\frac{\partial{{^2}u}}{{\partial{t}^2}} = c^2 \frac{\partial{{^2}u}}{{\partial{x}^2}}}
+\]
+}
+
+\section{The Fourier Transform}
+
+{\fontsize{30pt}{36pt}\selectfont
+\[
+\LARGE{\hat{f}(\xi) = \int^{\infty}_{-\infty} f(x) e^{2\pi i x \xi} \quad dx}
+\]
+ }
+
+
+\newpage
+
+\section{The Second Law of Thermodynamics}
+
+{\fontsize{30pt}{36pt}\selectfont
+\[
+	\LARGE{
+	dS \geq 0
+	}
+\]
+}
+
+\section{Relativity}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	E = {mc^2} 
+	\]
+}
+
+This equation states Einstein's mass energy equivalence relationship.
+
+\section{Relativity}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	i \hbar \frac{\partial{}}{\partial{t}}\Psi = \hat{H}\Psi
+\]
+}
+
+\section{Information Thoery}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	H = - \sum_{x} p(x) log \ p(x) 
+	\]
+}
+
+\section{Chaos Thoery}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	x_{t+1} = kx_t ( 1 -x_t )
+	\]
+}
+
+\section{Black-Scholes Equation}
+
+{\fontsize{30pt}{36pt}\selectfont
+	\[
+	\frac{1}{2} \sigma^2 S^2 \frac{\partial{{^2}V}}{\partial{S^2}}+ r S \frac{\partial{V}}{\partial{S}} + \frac{\partial{V}}{\partial{t}} - r V = 0
+	\]
+}
+
+\newpage
+
+\section{References}
+
+\begin{itemize}
+	\item \url{https://www.overleaf.com/learn/latex/Mathematical_expressions}
+	\item\url{https://github.com/EdwardCalzia/Latex-Formulas}
+	\item \url{https://latex-programming.fandom.com/wiki/List_of_LaTeX_symbols}
+	\item \url{https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols}
+\end{itemize}
+
+
+\end{document}

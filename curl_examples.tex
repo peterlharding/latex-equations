@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage{physics}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+In \LaTeX, the best practice is to use the physics package for curl symbol as well, because the physics package contains a pre-defined \\curl command  $\curl$  that denotes the entire curl operator.
+	
+	
+	$$ \curl $$
+	$$ \curl{\vb{F}} $$
+	
+	$$ \curl(\vb{F_{1}}+\vb{F_{2}}) $$
+	$$ \qty(\pdv{x}\hat{\imath}+\pdv{y}\hat{\jmath}+\pdv{z}\hat{k})\cp \vb{F} $$
+
+\[
+\nabla \cp \vb{F}= \begin{vmatrix}
+\vu{\imath} & \vu{\jmath} & \hat{k} \\ 
+\pdv{x} & \pdv{y} & \pdv{z} \\ 
+F_{x} & F_{y} & F_{z}
+\end{vmatrix}
+\]
+
+\newcommand{\rx}{\mathbb{R}}
+
+% \[ \rx  \]
+
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+
+Other numerical systems have similar notations.
+ 
+% The complex numbers \( \bb{C} \), the rational 
+% numbers \( \bb{Q} \) and the integer numbers \( \bb{Z} \).
+
+\section{Another Example}
+
+\newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
+
+To save some time when writing too many expressions 
+with exponents is by defining a new command to make simpler:
+
+\[ \plusbinomial{x}{y} \]
+
+And even the exponent can be changed
+
+\[ \plusbinomial[4]{y}{y} \]
+
+\end{document}
